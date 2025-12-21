@@ -1,0 +1,50 @@
+{
+  "pages": {
+    "/_app": [
+      "static/chunks/3e8b8_next_dist_compiled_77f9d632._.js",
+      "static/chunks/3e8b8_next_dist_shared_lib_8043c26f._.js",
+      "static/chunks/3e8b8_next_dist_client_a9720990._.js",
+      "static/chunks/3e8b8_next_dist_1a04345d._.js",
+      "static/chunks/3e8b8_next_app_31d605cb.js",
+      "static/chunks/[next]_entry_page-loader_ts_294c2365._.js",
+      "static/chunks/3e8b8_react-dom_f90a82c7._.js",
+      "static/chunks/3e8b8_a32df63f._.js",
+      "static/chunks/[root-of-the-server]__6c7bdeea._.js",
+      "static/chunks/Desktop_Carbonyx_Landing_Page_Landing_page_pages__app_2da965e7._.js",
+      "static/chunks/turbopack-Desktop_Carbonyx_Landing_Page_Landing_page_pages__app_a3ce8899._.js"
+    ],
+    "/_error": [
+      "static/chunks/3e8b8_next_dist_compiled_77f9d632._.js",
+      "static/chunks/3e8b8_next_dist_shared_lib_dbf44606._.js",
+      "static/chunks/3e8b8_next_dist_client_a9720990._.js",
+      "static/chunks/3e8b8_next_dist_dfbee8f3._.js",
+      "static/chunks/3e8b8_next_error_b64413dc.js",
+      "static/chunks/[next]_entry_page-loader_ts_2be45f79._.js",
+      "static/chunks/3e8b8_react-dom_f90a82c7._.js",
+      "static/chunks/3e8b8_a32df63f._.js",
+      "static/chunks/[root-of-the-server]__9f0e0558._.js",
+      "static/chunks/Desktop_Carbonyx_Landing_Page_Landing_page_pages__error_2da965e7._.js",
+      "static/chunks/turbopack-Desktop_Carbonyx_Landing_Page_Landing_page_pages__error_c5ca0dbd._.js"
+    ]
+  },
+  "devFiles": [],
+  "polyfillFiles": [
+    "static/chunks/78537_next_dist_build_polyfills_polyfill-nomodule.js"
+  ],
+  "lowPriorityFiles": [
+    "static/development/_ssgManifest.js",
+    "static/development/_buildManifest.js"
+  ],
+  "rootMainFiles": [
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_9b996f5e._.js",
+    "static/chunks/78537_next_dist_compiled_react-dom_fb020b5d._.js",
+    "static/chunks/78537_next_dist_compiled_react-server-dom-turbopack_4443d9d6._.js",
+    "static/chunks/78537_next_dist_compiled_next-devtools_index_8220473f.js",
+    "static/chunks/78537_next_dist_compiled_bc462dab._.js",
+    "static/chunks/78537_next_dist_client_f69188b0._.js",
+    "static/chunks/78537_next_dist_5a90d2be._.js",
+    "static/chunks/78537_@swc_helpers_cjs_4d63a4eb._.js",
+    "static/chunks/Desktop_Carbonyx_Landing_Page_Landing_page_a0ff3932._.js",
+    "static/chunks/turbopack-Desktop_Carbonyx_Landing_Page_Landing_page_6ba1ce8a._.js"
+  ]
+}

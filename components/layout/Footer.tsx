@@ -2,8 +2,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import { privacyPolicyContent } from "@/lib/privacy_policy_data";
+import ReactMarkdown from "react-markdown";
 
 export function Footer() {
+    const [showPrivacy, setShowPrivacy] = useState(false);
+
     return (
         <footer className="bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 pt-16 pb-8">
             <div className="container mx-auto px-4">
@@ -20,38 +26,33 @@ export function Footer() {
                         </Link>
                         <p className="text-slate-500 dark:text-slate-400 max-w-sm mt-4">
                             탄소 중립을 향한 가장 투명한 연결. <br />
-                            ZeroFlow는 에너지 거래의 새로운 기준을 만듭니다.
+                            <span className="font-semibold text-slate-700 dark:text-slate-200">CARBONYX</span>는 에너지 거래의 새로운 기준을 만듭니다.
                         </p>
                     </div>
 
-                    {/* Links Column 1 */}
-                    <div className="space-y-4">
-                        <h4 className="font-bold text-lg text-slate-900 dark:text-slate-100">Service</h4>
-                        <ul className="space-y-2 text-slate-600 dark:text-slate-400">
-                            <li>
-                                <Link href="#" className="hover:text-primary transition-colors">발전사업자 솔루션</Link>
-                            </li>
-                            <li>
-                                <Link href="#" className="hover:text-primary transition-colors">RE100 이행 솔루션</Link>
-                            </li>
-                            <li>
-                                <Link href="#" className="hover:text-primary transition-colors">수익 시뮬레이션</Link>
-                            </li>
-                        </ul>
-                    </div>
+                    {/* Spacer Column (since Service is removed, keep layout balanced or just leave empty space) */}
+                    <div className="hidden md:block"></div>
 
-                    {/* Links Column 2 */}
+                    {/* Company Info Column */}
                     <div className="space-y-4">
                         <h4 className="font-bold text-lg text-slate-900 dark:text-slate-100">Company</h4>
-                        <ul className="space-y-2 text-slate-600 dark:text-slate-400">
+                        <ul className="space-y-3 text-slate-600 dark:text-slate-400">
                             <li>
-                                <Link href="#" className="hover:text-primary transition-colors">회사 소개</Link>
+                                <span className="font-medium text-slate-900 dark:text-slate-300">CARBONYX</span>
+                            </li>
+                            <li className="flex flex-col">
+                                <span className="text-sm text-muted-foreground">문의</span>
+                                <a href="mailto:kimkinjuyo@gmail.com" className="hover:text-primary transition-colors">
+                                    kimkinjuyo@gmail.com
+                                </a>
                             </li>
                             <li>
-                                <Link href="#" className="hover:text-primary transition-colors">문의하기</Link>
-                            </li>
-                            <li>
-                                <Link href="#" className="hover:text-primary transition-colors">개인정보처리방침</Link>
+                                <button
+                                    onClick={() => setShowPrivacy(true)}
+                                    className="text-sm hover:text-primary transition-colors underline underline-offset-4"
+                                >
+                                    개인정보처리방침
+                                </button>
                             </li>
                         </ul>
                     </div>
@@ -61,6 +62,21 @@ export function Footer() {
                     <p>&copy; {new Date().getFullYear()} Carbonyx Inc. All rights reserved.</p>
                 </div>
             </div>
+
+            {/* Privacy Policy Dialog */}
+            <Dialog open={showPrivacy} onOpenChange={setShowPrivacy}>
+                <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
+                    <DialogHeader>
+                        <DialogTitle>개인정보처리방침</DialogTitle>
+                        <DialogDescription>
+                            CARBONYX의 개인정보 처리방침입니다.
+                        </DialogDescription>
+                    </DialogHeader>
+                    <div className="prose dark:prose-invert max-w-none mt-4 text-sm">
+                        <ReactMarkdown>{privacyPolicyContent}</ReactMarkdown>
+                    </div>
+                </DialogContent>
+            </Dialog>
         </footer>
     );
 }

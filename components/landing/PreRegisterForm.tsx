@@ -33,6 +33,13 @@ import {
     DialogHeader,
     DialogTitle,
 } from "@/components/ui/dialog";
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from "@/components/ui/select";
 import { SellerFormValues, BuyerFormValues, sellerSchema, buyerSchema } from "@/lib/schemas";
 
 import { supabase } from "@/lib/supabase";
@@ -167,9 +174,18 @@ export function PreRegisterForm({ type }: { type: "seller" | "buyer" }) {
                                         render={({ field }) => (
                                             <FormItem>
                                                 <FormLabel>소재지 <span className="text-xs text-muted-foreground">(선택)</span></FormLabel>
-                                                <FormControl>
-                                                    <Input placeholder="전남 해남군" {...field} value={String(field.value ?? '')} />
-                                                </FormControl>
+                                                <Select onValueChange={field.onChange} defaultValue={field.value}>
+                                                    <FormControl>
+                                                        <SelectTrigger>
+                                                            <SelectValue placeholder="지역 선택" />
+                                                        </SelectTrigger>
+                                                    </FormControl>
+                                                    <SelectContent>
+                                                        {["서울", "부산", "대구", "인천", "광주", "대전", "울산", "세종", "경기", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주"].map((loc) => (
+                                                            <SelectItem key={loc} value={loc}>{loc}</SelectItem>
+                                                        ))}
+                                                    </SelectContent>
+                                                </Select>
                                                 <FormMessage />
                                             </FormItem>
                                         )}

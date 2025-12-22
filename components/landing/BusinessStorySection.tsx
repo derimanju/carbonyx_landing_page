@@ -14,8 +14,8 @@ export function BusinessStorySection() {
     return (
         <section ref={containerRef} className="relative bg-slate-50 dark:bg-slate-950">
             {/* 1. The Problem: Market Opacity */}
-            <div className="min-h-screen flex flex-col items-center justify-center sticky top-0 overflow-hidden">
-                <div className="container px-4 mx-auto text-center z-10">
+            <div className="min-h-screen flex flex-col items-center justify-center md:sticky top-0 overflow-hidden relative z-0">
+                <div className="container px-4 mx-auto text-center z-10 relative">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -76,7 +76,7 @@ export function BusinessStorySection() {
             </div>
 
             {/* 2. The Solution: ZeroFlow Connection */}
-            <div className="min-h-screen bg-white dark:bg-slate-900 flex flex-col items-center justify-center relative py-20">
+            <div className="min-h-screen bg-white dark:bg-slate-900 flex flex-col items-center justify-center relative z-20 py-20">
                 <div className="container px-4 mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
@@ -159,7 +159,7 @@ export function BusinessStorySection() {
             </div>
 
             {/* 3. The Benefit: Why Now? */}
-            <div className="py-24 bg-slate-50 dark:bg-slate-950">
+            <div className="py-24 bg-slate-50 dark:bg-slate-950 relative z-30">
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <motion.div

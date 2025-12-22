@@ -1,12 +1,13 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === 'production';
-const repoName = "carbonyx_landing_page"; // 깃허브 리포지토리 이름
+// Only use basePath/assetPrefix when building for GitHub Pages
+const isGithubPages = process.env.GH_PAGES_BUILD === 'true';
+const repoName = "carbonyx_landing_page";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: isProd ? `/${repoName}` : "",
-  assetPrefix: isProd ? `/${repoName}/` : "",
+  basePath: isGithubPages ? `/${repoName}` : "",
+  assetPrefix: isGithubPages ? `/${repoName}/` : "",
   images: {
     unoptimized: true,
   },

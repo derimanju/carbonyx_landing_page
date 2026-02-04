@@ -13,7 +13,7 @@ export function PreRegisterSection() {
                     </h2>
                     <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
                         발전사업자도, RE100 기업도.<br />
-                        ZeroFlow와 함께라면 더 이상 고민할 필요가 없습니다.
+                        RE100+와 함께라면 더 이상 고민할 필요가 없습니다.
                     </p>
                 </div>
 

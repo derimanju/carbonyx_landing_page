@@ -15,20 +15,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ZeroFlow | 탄소 중립을 향한 가장 투명한 연결",
-  description: "복잡한 재생에너지 시장의 비효율을 걷어내고, 발전사업자와 기업 모두를 위한 최적의 수익과 가치를 창출합니다. ZeroFlow와 함께 투명한 에너지 거래를 경험하세요.",
-  keywords: ["ZeroFlow", "제로플로우", "재생에너지", "탄소중립", "RE100", "태양광", "에너지거래", "ESG"],
+  title: "RE100+ | 탄소 중립을 향한 가장 투명한 연결",
+  description: "복잡한 재생에너지 시장의 비효율을 걷어내고, 발전사업자와 기업 모두를 위한 최적의 수익과 가치를 창출합니다. RE100+와 함께 투명한 에너지 거래를 경험하세요.",
+  keywords: ["RE100+", "알이백플러스", "재생에너지", "탄소중립", "RE100", "태양광", "에너지거래", "ESG"],
   openGraph: {
-    title: "ZeroFlow | 탄소 중립을 향한 가장 투명한 연결",
+    title: "RE100+ | 탄소 중립을 향한 가장 투명한 연결",
     description: "복잡한 재생에너지 시장의 비효율을 걷어내고, 발전사업자와 기업 모두를 위한 최적의 수익과 가치를 창출합니다.",
-    url: "https://zeroflow.energy", // Placeholder URL
-    siteName: "ZeroFlow",
+    url: "https://re100plus.energy", // Placeholder URL
+    siteName: "RE100+",
     locale: "ko_KR",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZeroFlow | 탄소 중립을 향한 가장 투명한 연결",
+    title: "RE100+ | 탄소 중립을 향한 가장 투명한 연결",
     description: "복잡한 재생에너지 시장의 비효율을 걷어내고, 발전사업자와 기업 모두를 위한 최적의 수익과 가치를 창출합니다.",
   },
   robots: {

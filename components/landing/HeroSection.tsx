@@ -29,7 +29,7 @@ export function HeroSection() {
                 {/* Main Headings */}
                 <div className="mb-12 max-w-4xl space-y-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
                     <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight text-white mb-4 leading-tight drop-shadow-lg">
-                        <span className="text-primary-foreground">ZeroFlow</span>
+                        <span className="text-primary-foreground">RE100+</span>
                     </h1>
                     <p className="text-3xl md:text-5xl font-bold text-white drop-shadow-md">
                         탄소 중립을 향한 가장 <span className="text-white underline decoration-4 underline-offset-4 decoration-primary">투명한 연결</span>

@@ -9,7 +9,7 @@ export function ServiceFlowSection() {
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4">
-                        <span className="text-primary">ZeroFlow</span>가 만드는 에너지의 흐름
+                        <span className="text-primary">RE100+</span>가 만드는 에너지의 흐름
                     </h2>
                     <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
                         공급자에게는 수익의 확신을, 수요자에게는 최적의 이행 솔루션을 제공합니다.
@@ -63,7 +63,7 @@ export function ServiceFlowSection() {
                             <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-bold tracking-wide mb-2 border border-primary/20">
                                 Core Engine
                             </span>
-                            <h3 className="text-xl font-bold text-primary">ZeroFlow Platform</h3>
+                            <h3 className="text-xl font-bold text-primary">RE100+ Platform</h3>
                         </div>
                         <Card className="border-2 border-primary shadow-xl bg-white dark:bg-slate-950">
                             <CardHeader className="pb-2">

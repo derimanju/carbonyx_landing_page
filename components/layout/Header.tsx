@@ -29,8 +29,8 @@ export function Header() {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                    ? "bg-white/10 backdrop-blur-md border-b border-white/10 py-4"
-                    : "bg-transparent py-6"
+                ? "bg-white/10 backdrop-blur-md border-b border-white/10 py-4"
+                : "bg-transparent py-6"
                 }`}
         >
             <div className="container mx-auto px-4 flex items-center justify-between">
@@ -40,18 +40,15 @@ export function Header() {
                     className="cursor-pointer flex items-center gap-2"
                 >
                     <div className={`relative w-8 h-8 md:w-10 md:h-10 transition-opacity ${isScrolled ? 'opacity-100' : 'opacity-90'}`}>
-                        {/* Using the logo from public folder. Assuming it's suitable for dark background or we might need a white version. 
-                   If the logo is dark, we might need a filter or a text fallback. 
-                   For now, let's assume the logo works or use text Key. */}
                         <Image
-                            src="/carbonyx_logo.png"
-                            alt="ZeroFlow Logo"
+                            src="/RE100plus_logo.png"
+                            alt="RE100+ Logo"
                             fill
                             className="object-contain"
                         />
                     </div>
                     <span className={`text-xl md:text-2xl font-bold tracking-tighter ${isScrolled ? "text-white" : "text-white"}`}>
-                        ZeroFlow
+                        RE100+
                     </span>
                 </div>
 

@@ -98,7 +98,7 @@ export function PreRegisterForm({ type }: { type: "seller" | "buyer" }) {
                     </CardTitle>
                     <CardDescription>
                         {type === "seller"
-                            ? "수익 극대화 솔루션, ZeroFlow."
+                            ? "수익 극대화 솔루션, RE100+."
                             : "가장 경제적인 RE100 이행 플랜."}
                         <br />지금 신청하면 수수료 무료 혜택을 드립니다.
                     </CardDescription>
@@ -115,7 +115,7 @@ export function PreRegisterForm({ type }: { type: "seller" | "buyer" }) {
                                         <FormItem>
                                             <FormLabel>{type === "seller" ? "상호명" : "기업명"}</FormLabel>
                                             <FormControl>
-                                                <Input placeholder={type === "seller" ? "햇살태양광" : "(주)제로플로우"} {...field} value={String(field.value ?? '')} />
+                                                <Input placeholder={type === "seller" ? "햇살태양광" : "(주)RE100+"} {...field} value={String(field.value ?? '')} />
                                             </FormControl>
                                             <FormMessage />
                                         </FormItem>
@@ -268,7 +268,7 @@ export function PreRegisterForm({ type }: { type: "seller" | "buyer" }) {
                     <DialogHeader>
                         <DialogTitle>사전 신청이 완료되었습니다!</DialogTitle>
                         <DialogDescription>
-                            ZeroFlow 서비스에 관심을 가져주셔서 감사합니다.<br />
+                            RE100+ 서비스에 관심을 가져주셔서 감사합니다.<br />
                             서비스 오픈 시, 입력해주신 이메일로 가장 먼저 안내드리겠습니다.
                         </DialogDescription>
                     </DialogHeader>
@@ -286,7 +286,7 @@ export function PreRegisterForm({ type }: { type: "seller" | "buyer" }) {
                     </DialogHeader>
                     <div className="space-y-4 text-sm text-muted-foreground">
                         <p>
-                            ZeroFlow는 사전 신청 접수 및 서비스 안내를 위해 아래와 같이 개인정보를 수집합니다.
+                            RE100+는 사전 신청 접수 및 서비스 안내를 위해 아래와 같이 개인정보를 수집합니다.
                         </p>
                         <ul className="list-disc pl-5 space-y-2">
                             <li><strong>수집 항목:</strong> 상호명(기업명), 대표자(담당자) 성명, 이메일 주소, (선택)설비 정보 및 전력 사용량 등</li>

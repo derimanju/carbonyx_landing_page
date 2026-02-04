@@ -75,7 +75,7 @@ export function BusinessStorySection() {
                 </div>
             </div>
 
-            {/* 2. The Solution: ZeroFlow Connection */}
+            {/* 2. The Solution: RE100+ Connection */}
             <div className="min-h-screen bg-white dark:bg-slate-900 flex flex-col items-center justify-center relative z-20 py-20">
                 <div className="container px-4 mx-auto">
                     <motion.div
@@ -86,7 +86,7 @@ export function BusinessStorySection() {
                     >
                         <span className="text-primary font-bold tracking-wider uppercase mb-2 block">The Solution</span>
                         <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-6">
-                            ZeroFlow가 만드는<br />
+                            RE100+가 만드는<br />
                             <span className="text-primary">완벽한 에너지 흐름</span>
                         </h2>
                     </motion.div>
